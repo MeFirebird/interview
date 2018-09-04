@@ -1,0 +1,101 @@
+
+1.如何实现事件委托？
+
+
+
+
+2.typeof(null) =? null instanceof Object
+
+
+
+3.js解析url：生成key：value格式的对象
+  a：host是域名+端口
+  b：hostname：域名
+  
+  /**
+     * 利用dom对象来做处理
+     * 1.字符串方法  数组方法  
+     * 2.箭头函数  立即执行函数
+     *
+     * @param url
+     * @returns {{protocol: string, hostname: string, port: string, path: string, query, params: string[]}}
+     */
+    function parseUrl(url){
+        let a = document.createElement('a');
+        a.href = url;
+        console.info(a)
+        return {
+            protocol: a.protocol.replace(':',''),
+            hostname: a.hostname,
+            port: a.port,
+            path: a.pathname,
+            query: (() => {
+                console.log(a.search)        // ?name=liyajie&age=12
+                let query = a.search.substr(1);
+                console.log('query',query)   //name=liyajie&age=12
+                let queryArr = query.split('&');
+                let queryObj = {};
+                queryArr.forEach((item,index)=>{
+                    var item = item.split('=');
+                    var key = item[0];
+                    queryObj[key] = item[1];
+                })
+                return queryObj;
+            })(),   // 这里的写法
+            params: (() => {
+                var params = a.hash.substr(1);
+                var paramsArr = params.split('#');
+                return paramsArr;
+            })(),
+
+        }
+    }
+    var urlObj = parseUrl('http://www.baidu.com:90/search?name=liyajie&age=12#abc#bbb')
+    console.log(urlObj)
+    
+    
+    
+    
+    
+    4.javascript实现继承的方式有哪几种？  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    5.css实现垂直左右居中（两种以上）
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    6.写一个闭包，并说出你对闭包的理解 
+    
+    
+    
+    
+    
+    7.说出this的指向
+      <div onclick="a()">
+       hello world
+      </div>
+      <script>
+       function a(){
+        console.log(this)      // 这里的this指向的是window 
+       } 
+      </script>
+    
+    
+    
+    
+    
