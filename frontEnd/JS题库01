@@ -69,6 +69,7 @@
     
     
     
+    
     5.css实现垂直左右居中（两种以上）
     
     
@@ -94,6 +95,7 @@
         console.log(this)      // 这里的this指向的是window 
        } 
       </script>
+      答案： 在全局作用域调用一个函数，this总是指向global对象 
     
     
     
