@@ -5,6 +5,8 @@
 
 
 2.typeof(null) =? null instanceof Object
+  答：  console.log(typeof null)  // object
+        console.log(null instanceof Object)   // false 
 
 
 
