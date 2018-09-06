@@ -1,0 +1,59 @@
+
+
+1.webpack构建流程  
+
+2.你的核心竞争力在哪里？   
+
+3.https://segmentfault.com/q/1010000000640869
+
+4.SPA?　什么是单页面应用？ 
+
+5.node的异步IO和事件驱动
+
+6.web socket协议？　
+
+7.数据库镜像   心跳检测 
+
+8.kafka的demo   订阅发布
+
+9.z-tree  editor
+
+10.rest接口
+
+11.前后端分离？　
+
+12.vue响应式原理   
+
+  a：Vue 将遍历data选项的数据对象，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。  
+  
+  b: 每个组件都有对应的watcher 实例对象，观察getter和setter的调用情况，如果调用了setter，那么就会触发关联组件的重新渲染
+  
+  
+  补充：
+  
+  a：受现代 JavaScript 的限制 (以及废弃 Object.observe)，Vue 不能检测到对象属性的添加或删除   创建实例后添加和删除
+  
+  b：在已经创建的实例上动态添加新的根级响应式属性     Vue.set(object, key, value)  vm.$set 实例方法     Object.assign()
+  
+  c：数据变化---》vue开启dom更新队列；并缓冲在同一事件循环中发生的所有数据改变。  如果同一个 watcher 被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和 DOM 操作上非常重要
+
+
+
+
+  生命周期钩子
+
+13.vue.nextTick
+
+14.过度效果：enter   enter-active   enter-to
+
+15.性能优化之dns-prefetch   DNS 预读取是一项使浏览器主动去执行域名解析的功   X-DNS-Prefetch-Control
+
+16.vue   DOM更新原理
+
+   template是render函数的语法糖    template需要编译器的 
+   
+   Vue 通过建立一个虚拟 DOM 对真实 DOM 发生的变化保持追踪。
+
+17.mvc   mvvm      
+
+18.网上认真的找面试题，好好的刷吧！　　
