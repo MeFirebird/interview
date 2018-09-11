@@ -1,0 +1,13 @@
+
+1.禁用input的方法：
+  a：disabled属性
+  b：read only
+  c：focus事件触发的执行onblur
+  
+2.写一个闭包
+
+
+3.二分法
+
+
+4.正则 
