@@ -33,3 +33,18 @@
 3.webpack单页包拆分   打包过大：异步加载 
 
 4.webpack多页呢？  如何提升打包性能呢？ 
+
+
+
+四：
+1.CDN
+2.DNS prefetch
+3.web缓存
+4.同源策略  JSONP
+
+
+
+
+
+
+
