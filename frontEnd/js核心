@@ -5,6 +5,6 @@
 
 
 二：
-1.如何判断数组：Object.prototype.toString.call(arr) === [object array]
+1.如何判断数组：typeof arr === 'object'  &&   Object.prototype.toString.call(arr) === [object array]
 
 
