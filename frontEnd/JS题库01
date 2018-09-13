@@ -1,11 +1,13 @@
 
 1.如何实现事件委托？
+  原理：给父级添加事件，子元素触发的事件会冒泡到父元素，然后执行相应的逻辑代码， 不用去选择每一个子元素，减少了dom操作。
+  当用事件委托的时候，根本就不需要去遍历元素的子节点，只需要给父级元素添加事件就好了，其他的都是在js里面的执行，这样可以大大的减少dom操作，这才是事件委托的精髓所在。
 
-
+ 
 
 
 2.typeof(null) =? null instanceof Object
-  答：  console.log(typeof null)  // object
+  答：  console.log(typeof null)  // object （null  数组  对象）
         console.log(null instanceof Object)   // false 
 
 
@@ -60,6 +62,19 @@
     
     
     4.javascript实现继承的方式有哪几种？  
+      1.原型链
+        缺点：
+      2.借用构造函数
+         缺点：
+      3.组合继承： 原型链 +  借用构造函数  
+         缺点：  
+      4.原型式 
+          缺点：
+      5.寄生式
+         缺点：
+      6.寄生组合式 
+          缺点：
+      
     
     
     
@@ -68,22 +83,40 @@
     
     
     
-    
-    
-    
+ 
     
     5.css实现垂直左右居中（两种以上）
-    
-    
-    
-    
-    
-    
+      a： display：table-cell + vertical-align：middle（垂直居中） +  margin：auto(左右居中)
+      b:  line-height等于height(注意有固定高度的div：需要设置font-size：0；然后line-height：height+子div的height)   垂直居中
+          text-align：center
+      c：父元素相对定位，子元素绝对定位，设置上下左右的距离为0，margin：auto，即可实现！
+      d：flex：align-items: center  +  margin: auto
+        
     
     
     
     6.写一个闭包，并说出你对闭包的理解 
-    
+     var aaa = (function(){
+        var a = 1;
+        function bbb(){
+            a++;
+            alert(a);
+        }
+        function ccc(){
+            a++;
+            alert(a);
+        }
+        return {
+            b:bbb,             //json结构
+            c:ccc
+        }
+    })();
+    alert(aaa.a)//undefined
+    aaa.b();     //2
+    aaa.c()
+
+   闭包是指有权访问另一个函数作用域中的变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，
+   通过另一个函数访问这个函数的局部变量。闭包的缺点就是常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。
     
     
     
