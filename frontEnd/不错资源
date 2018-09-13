@@ -1,0 +1,35 @@
+查阿里的面试题    看面经啊，看看各个公司的面经啊！
+
+周一：
+1.Vue：基础文档啥的  看项目、看webpack文档和配置
+周二：
+1.看Element源码   看lodash源码
+周三：
+1.刷面试题   vue面试题
+
+
+1.http://javascript.ruanyifeng.com/nodejs/npm.html#toc18
+
+2.https://wangdoc.com/javascript/bom/location.html   整理这里的demo啊   好好做总结啦
+
+
+
+http://taobaofed.org/blog/2016/09/09/webpack-flow/   这几个大厂的团队博客很nice的哦！
+
+
+
+
+3.设计模式：工厂  发布订阅模式
+  算法： 二分法  排序   去重：reduce set    递归    深度优先、广度优先     前序、中序、后序
+  
+  
+  
+1.写webpack配置的博客
+2.写http2协议的博客
+3.浏览器加载  渲染机制
+4.MVC MVVM的理解
+5.基本的算法啊； 排序啥的    二分法啊
+
+移动端开发：响应式   兼容性调整方案？   这个一定要去总结！！！！！！！！！！！！！！！！！！！
+a：字体
+b：图片
